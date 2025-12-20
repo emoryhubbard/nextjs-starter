@@ -1,0 +1,72 @@
+### Pyramid
+
+- **Teacher** Explain this code is purposefully old and we are going to show a problem with it to show the why behind Promises
+
+- **Student** Think about how you could edit the code to make another API call inside the callback in the previous call
+
+- **Student** Make the edit
+
+- **Teacher** Any questions about any code here
+
+### Solution
+
+- **Teacher** If we keep going with nesting it will be very hard to read
+
+    Loss of stack
+
+    Loss of return 
+
+    Loss of throw
+
+    Mismatched API--promises solve each of these but introduce a new problem--although they are a huge improvement where we now have try and catch again we don't the actual try and catch keywords and we have to call methods to work with async code--with the async/await keywords we get full language support for the mechanism without needing to learn any of the promises API most of the time since with the addition of these keywords the regular try and catch keywords will support our async code now
+
+    await api call--modern method although you will need to understand promise typing and sometimes promise needed instead for example if top level await not supported in a certain environment or codebase
+    
+    Return of promises--in the future there is a strong chance programmers will return to promises due to their advantages with writing code in the simpler, more efficient, and inherently less error-prone FP style of minimizing or eliminating changes in state or variables--in this case you simply don't write code that throws errors or tries or catches you just always return and return error objects if something went wrong and use a regular if statement on them to handle what should happen next
+
+    Timers with settimeout or setinterval 
+
+    These next 3 go over super fast as they are not critical to know usually except for api mocking but we will cover that later but should be aware of them anyway
+
+    JS micro and macro task etc--async heck but good to know if you are ever in a tight spot and need to control async event order somehow
+
+    Real multithreading: Do web workers run in actual separate thread and 3 big purposes of web workers--genuine need for performant multithreading, PWAs, api mocking
+
+    Main loop: Request animation frame for main game loop
+
+React class components concepts & exercises (requires OOP in Next.js concepts & exercises)
+    Variables in markup
+
+    OOP with markup
+
+    Props and attributes connection and simple component template (a more unified "variables" interface leveraging html's existing attributes)
+
+    Reactivity
+
+    Composition
+
+    Mount/Unmount (for example with Mouse Position)
+
+    Update (for example api call will need componentDidUpdate)
+
+    HOCs (for example withMousePosition)
+
+    Generic Types
+
+    Intersection Types
+
+        OOP
+        Singleton (just a global var--goes to spaghetti quick)
+        
+        DI--less tight coupling since you pass the globals in it should use 
+        
+        Testing--also much better for testing for the same reason as you can just pass in any global
+
+        Boilerplate--this becomes a problem because (1) manual code writing and (2) manual code updating in the future across many files
+
+        Automatic DI--solves boilerplate but introduces explictness concern
+
+        Explicitness
+    
+    Automatic DI
+

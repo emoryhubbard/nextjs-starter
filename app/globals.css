@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @layer base {
   @import "@picocss/pico/css/pico.classless.min.css";
+
+  li:has(> [data-slot="requires"]) {
+    position: relative;
+  }
 }
 
 /* Tell Tailwind where to scan for classes (including MDX) */

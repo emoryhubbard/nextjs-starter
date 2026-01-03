@@ -1,3 +1,25 @@
+import PokemonButton from './PokemonButton';
+
+## API Call
+
+Here are some example API calls you can open in the browser:
+
+```text
+https://pokeapi.co/api/v2/pokemon/1000/
+
+https://pokeapi.co/api/v2/pokemon?limit=1
+
+https://pokeapi.co/api/v2/pokemon?limit=1&offset=100
+```
+
+## Notes for Students
+
+## Inspect Network
+
+Open DevTools ➔ Click "Network" tab ➔ Reload page ➔ Click on the request ➔ View details.
+
+## Import Button Component (example)
+
 ### Pyramid
 
 - **Teacher** Explain this code is purposefully old and we are going to show a problem with it to show the why behind Promises

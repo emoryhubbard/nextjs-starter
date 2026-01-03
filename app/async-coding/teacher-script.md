@@ -34,7 +34,7 @@
 
     Main loop: Request animation frame for main game loop
 
-React class components concepts & exercises (requires OOP in Next.js concepts & exercises)
+React class components
     Variables in markup
 
     OOP with markup

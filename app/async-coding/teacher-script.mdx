@@ -16,9 +16,27 @@ https://pokeapi.co/api/v2/pokemon?limit=1&offset=100
 
 ## Inspect Network
 
-Open DevTools ➔ Click "Network" tab ➔ Reload page ➔ Click on the request ➔ View details.
+Open DevTools ➔ Click "Network" tab ➔ Reload page ➔ Click on the request ➔ View details
 
-## Import Button Component (example)
+## PokemonButton
+
+```tsx
+import React from 'react';
+import axios from 'axios';
+
+const PokemonButton: React.FC = () => {
+  const fetchPokemon = () => {
+    axios.get('https://pokeapi.co/api/v2/pokemon/1000/', (response) => {
+      console.log(response.data);
+    });
+  };
+
+  return <button onClick={fetchPokemon}>Fetch Pokémon</button>;
+};
+
+export default PokemonButton;
+```
+
 
 ### Pyramid
 

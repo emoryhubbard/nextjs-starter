@@ -85,9 +85,11 @@ React class components
 
     Composition
 
-    Mount/Unmount (for example for mount using api call for initial or placeholder data and for unmount removing event listeners so they don't accumulate)
+    Conditional Rendering
 
-    Update (for example api call will need componentDidUpdate e.g. Pokedex number updates automatically with no need for button click)
+    Mount/Unmount (for example for mount using api call for initial or placeholder data and for unmount explaining how UI component libs work internally that use timers or global or non-React-attached event listeners in way that they don't accumulate and what event listeners are React-attached and what would happen if they weren't)
+
+    Update (for example api call will need componentDidUpdate e.g. Pokedex number updates automatically with no need for button click--also explain how it handles both aspects of cleanup by replacing both update-with-condition patterns and unmount)
 
     HOCs (for example withPokedexNumber)
 
